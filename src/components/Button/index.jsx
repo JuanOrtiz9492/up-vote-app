@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import classNames from 'classnames';
-import { cssConstants } from '../../config/cssConstants.js';
+import { cssConstants } from '../../config/cssConstants';
 
 const { fire, jungle, white } = cssConstants.colors;
 

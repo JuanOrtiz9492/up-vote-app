@@ -1,27 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import './App.css';
-import Card from './components/Card';
-import Candidates from './components/Candidates';
-import { constants } from './config/constants';
-import Hero from './components/Hero';
+import {
+  	BrowserRouter as Router,
+  	Switch,
+  	Route
+} from "react-router-dom";
 
-const Wraper = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  background: white;
-  width: max-content;
-  align-items: center;
-`
+import Main from './views/Main';
+import StyledBlank from './views/PastTrials';
+
 function App() {
 
   return (
     <div className="App">
-      <Wraper>
-        <Hero/>
-        <Candidates candidates={constants.candidates}/>
-      </Wraper>
+		<Router>
+			<Switch>
+				<Route path="/" component={Main} exact/>
+				<Route path="/past-trials" component={StyledBlank}/>
+			</Switch>
+		</Router>
     </div>
   );
 }

@@ -1,9 +1,46 @@
+import React from 'react';
+import { SearchIcon } from '../components/Icon/IconList';
+import { cssConstants } from './cssConstants';
+
 export const constants = {
     progressBar: {
         maxValue: 100,
     },
     photos: {
         size: '533px',
+    },
+    hero: {
+        background: {
+            width: '1200px',
+            height: '630px',
+            fileName: 'PopeFrancis.jpg'
+        },
+        navBar: {
+            title: 'Rule of Thumb.',
+            linkArray: [
+                {
+                    id: 1,
+                    route: '/past-trials',
+                    children: 'Past Trials'
+                },
+                {
+                    id: 2,
+                    route: '/',
+                    children: 'How it Works'
+                },
+                {
+                    id: 3,
+                    route: '/',
+                    children: 'Log in/Sign Up'
+                },
+                {
+                    id: 4,
+                    route: '/',
+                    children: <SearchIcon width={2} color={cssConstants.colors.white.hex}/>
+                }
+            ]
+            
+        }
     },
     candidates: [
         { 

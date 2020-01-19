@@ -53,15 +53,21 @@ class Card extends Component {
             lastUpdate,
             aditionalText
         } = this.props;
+
+        const {
+            fire,
+            jungle,
+            white
+        } = cssConstants.colors;
         return(
             <StyledCardContainer image={image}>
                 <MidContainer>
                     {true ? 
-                        <StyledIcon color={cssConstants.colors.fire.hex}>
-                            <ThumbsUpIcon width={1.8}/>        
+                        <StyledIcon color={fire.hex}>
+                            <ThumbsUpIcon width={1.8} color={white.hex}/>        
                         </StyledIcon> : 
-                        <StyledIcon color={cssConstants.colors.jungle.hex}>
-                            <ThumbsDownIcon width={1.8}/>        
+                        <StyledIcon color={jungle.hex}>
+                            <ThumbsDownIcon width={1.8} color={white.hex}/>        
                         </StyledIcon>
                     }
                     <Description name={name} lastUpdate={lastUpdate} aditionalText={aditionalText}/>

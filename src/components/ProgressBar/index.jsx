@@ -7,7 +7,7 @@ import { cssConstants } from '../../config/cssConstants';
 import {ThumbsUpIcon, ThumbsDownIcon} from '../Icon/IconList';
 
 
-const { fire, jungle } = cssConstants.colors;
+const { fire, jungle, white } = cssConstants.colors;
 
 const StyledProgressBar = styled.progress`
     position: absolute;
@@ -51,18 +51,20 @@ const StyledPercentage = styled.div`
     }
 `
 const StyledLabel = styled.span`
+    color: ${white.hex};
     font-size: 2em;
+    padding: 0.2em;
 `
 
 const ProgressBar = ({value, maxValue, ...props}) => (
     <StyledContainer className="progress-bar">
         <StyledPercentage className="left">
-            <ThumbsUpIcon width={1.5}/>
+            <ThumbsUpIcon width={1.5} color={white.hex}/>
             <StyledLabel>{`${value}%`}</StyledLabel>
         </StyledPercentage>
         <StyledPercentage className="right">
             <StyledLabel>{`${maxValue-value}%`}</StyledLabel>
-            <ThumbsDownIcon width={1.5}/>
+            <ThumbsDownIcon width={1.5} color={white.hex}/>
         </StyledPercentage>
         <StyledProgressBar value={value} max={maxValue}/>
     </StyledContainer>

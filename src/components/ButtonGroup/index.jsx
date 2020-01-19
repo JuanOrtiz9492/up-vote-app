@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import Button from '../Button';
 import {ThumbsUpIcon, ThumbsDownIcon} from '../Icon/IconList'
+import { cssConstants } from '../../config/cssConstants';
 
 const VotesContainer = styled.div`
     display: flex;
@@ -38,13 +39,24 @@ class ButtonGroup extends Component {
             isDownVoteSelected,
             isVoteSend,
         } = this.state;
-
+        const { colors } = cssConstants;
         return (
             <>
             <VotesContainer>
-                {!isVoteSend && <>
-                <Button fire icon={<ThumbsUpIcon width={1.2}/>} checked={isUpVoteSelected} onClick={this.handleUpVote}/>
-                <Button jungle icon={<ThumbsDownIcon width={1.2}/>} checked={isDownVoteSelected} onClick={this.handleDownVote}/>
+                {!isVoteSend && 
+                <>
+                    <Button 
+                        fire 
+                        icon={<ThumbsUpIcon width={1.2} color={colors.white.hex}/>} 
+                        checked={isUpVoteSelected} 
+                        onClick={this.handleUpVote}
+                    />
+                    <Button 
+                        jungle 
+                        icon={<ThumbsDownIcon width={1.2} color={colors.white.hex}/>} 
+                        checked={isDownVoteSelected} 
+                        onClick={this.handleDownVote}
+                    />
                 </>}
                 <Button label={isVoteSend ? "vote again" : "vote now"}/>
             </VotesContainer>
