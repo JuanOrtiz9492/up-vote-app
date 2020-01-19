@@ -18,7 +18,8 @@ export const cssConstants = {
             g: '222',
             b: '255',
         },
-
-
-    }
-}
+    },
+    progressBar: {
+        width: '533px',
+    },
+};

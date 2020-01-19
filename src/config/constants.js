@@ -1,5 +1,5 @@
 export const constants = {
     progressBar: {
-        maxValue: 100
-    }
-}
+        maxValue: 100,
+    },
+};
