@@ -21,13 +21,13 @@ const StyledProgressBar = styled.progress`
     height: 3em;
 
     &::-webkit-progress-bar {
-        background-color: ${fire.hex};
+        background-color: rgba(${fire.r}, ${fire.g}, ${fire.b}, 0.8);
         border-radius: 2px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
       }
 
     &::-webkit-progress-value {
-        background-color: ${jungle.hex};    
+        background-color: rgba(${jungle.r}, ${jungle.g}, ${jungle.b}, 0.8);    
     }
   }
 `

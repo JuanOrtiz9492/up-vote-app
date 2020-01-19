@@ -7,7 +7,7 @@ const VotesContainer = styled.div`
     display: flex;
     flex-direction: row;
     width: min-content;
-    padding: 1em;
+    margin: 1em 0;
 `
 
 class ButtonGroup extends Component {

@@ -22,4 +22,12 @@ export const cssConstants = {
     progressBar: {
         width: '533px',
     },
+    textSizes:{
+        exLarge: '3em',
+        large: '2.5em',
+        medium: '2em',
+        normal: '1em',
+        small: '0.8em',
+        exSmall: '0.5em',
+    },
 };
