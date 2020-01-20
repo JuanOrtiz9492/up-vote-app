@@ -40,50 +40,48 @@ const StyledIcon = styled.div`
     width: max-content;
 `
 
+const {
+    fire,
+    jungle,
+    white
+} = cssConstants.colors;
 
-class Card extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            positiveVotes: 0,
-            negativeVotes: 0
+const Card = ({
+    id,
+    image,
+    name,
+    lastUpdate,
+    aditionalText,
+    upVotes,
+    downVotes,
+    voteHandler,
+    }) => {
+        const voteTypeHandler = (voteType) => {
+            if (voteType === 'upVote') {
+                voteHandler(id, ++upVotes, downVotes);
+            } else if (voteType === 'downVote') {
+                voteHandler(id, upVotes, ++downVotes);
+            }
         }
-    }
-    render(){
-        const {
-            image,
-            name,
-            lastUpdate,
-            aditionalText
-        } = this.props;
-
-        const {
-            fire,
-            jungle,
-            white
-        } = cssConstants.colors;
-        return(
+        return (
             <StyledCardContainer image={image}>
                 <MidContainer>
-                    {true ? 
-                        <StyledIcon color={fire.hex}>
+                    {upVotes >= downVotes ? 
+                        <StyledIcon color={jungle.hex}>
                             <ThumbsUpIcon width={1.8} color={white.hex}/>        
                         </StyledIcon> : 
-                        <StyledIcon color={jungle.hex}>
+                        <StyledIcon color={fire.hex}>
                             <ThumbsDownIcon width={1.8} color={white.hex}/>        
                         </StyledIcon>
                     }
                     <Description name={name} lastUpdate={lastUpdate} aditionalText={aditionalText}/>
                     <div/>
-                    <ButtonGroup />
+                    <ButtonGroup voteHandler={voteTypeHandler}/>
                 </MidContainer>
                 <BottomContainer>
-                    <ProgressBar/>
+                    <ProgressBar value={upVotes} maxValue={upVotes+downVotes}/>
                 </BottomContainer>
             </StyledCardContainer>
-        )
-    }
-}
-
+        )}
 
 export default Card;

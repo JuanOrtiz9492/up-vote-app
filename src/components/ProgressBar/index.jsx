@@ -56,19 +56,23 @@ const StyledLabel = styled.span`
     padding: 0.2em;
 `
 
-const ProgressBar = ({ value, maxValue }) => (
-    <StyledContainer className="progress-bar">
-        <StyledPercentage className="left">
-            <ThumbsUpIcon width={1.5} color={white.hex}/>
-            <StyledLabel>{`${value}%`}</StyledLabel>
-        </StyledPercentage>
-        <StyledPercentage className="right">
-            <StyledLabel>{`${maxValue-value}%`}</StyledLabel>
-            <ThumbsDownIcon width={1.5} color={white.hex}/>
-        </StyledPercentage>
-        <StyledProgressBar value={value} max={maxValue}/>
-    </StyledContainer>
+const ProgressBar = ({ value, maxValue }) => {
+    const getPercentage = (value, maxValue) => (Math.ceil((value * 100)/maxValue));
+    const percentage = getPercentage(value, maxValue);
+    return (
+        <StyledContainer className="progress-bar">
+            <StyledPercentage className="left">
+                <ThumbsUpIcon width={1.5} color={white.hex}/>
+                <StyledLabel>{`${percentage}%`}</StyledLabel>
+            </StyledPercentage>
+            <StyledPercentage className="right">
+                <StyledLabel>{`${100-percentage}%`}</StyledLabel>
+                <ThumbsDownIcon width={1.5} color={white.hex}/>
+            </StyledPercentage>
+            <StyledProgressBar value={value} max={maxValue}/>
+        </StyledContainer>
     )
+}
 
 ProgressBar.propTypes = {
     value: PropTypes.number,

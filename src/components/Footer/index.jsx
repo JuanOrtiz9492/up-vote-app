@@ -38,8 +38,6 @@ const IconContainer = styled.div`
     height: fit-content;
     align-self: center;
 `
-
-console.log(constants);
 const Footer = ()=>(
     <StyledFooter>
         <LinksContainer>

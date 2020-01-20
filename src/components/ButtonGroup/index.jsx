@@ -13,15 +13,15 @@ const VotesContainer = styled.div`
 `
 
 class ButtonGroup extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             isUpVoteSelected: false,
             isDownVoteSelected: false,
             isVoteSend: false
         }
     }
-    handleUpVote = (e)=> {
+    handleUpVote = ()=> {
         this.setState({
             isUpVoteSelected: true,
             isDownVoteSelected: false,
@@ -34,6 +34,17 @@ class ButtonGroup extends Component {
             isDownVoteSelected: true,
         });
     }
+
+    handleVoteSend = () => {
+        const { isUpVoteSelected, isDownVoteSelected } = this.state;
+        const { voteHandler } = this.props;
+        if(isUpVoteSelected) {
+            voteHandler('upVote')
+        } else if (isDownVoteSelected) {
+            voteHandler('downVote')
+        }
+    }
+    
     render () {
         const {
             isUpVoteSelected,
@@ -47,19 +58,19 @@ class ButtonGroup extends Component {
                 {!isVoteSend && 
                 <>
                     <Button 
-                        fire 
+                        jungle 
                         icon={<ThumbsUpIcon width={1.2} color={colors.white.hex}/>} 
                         checked={isUpVoteSelected} 
                         onClick={this.handleUpVote}
                     />
                     <Button 
-                        jungle 
+                        fire 
                         icon={<ThumbsDownIcon width={1.2} color={colors.white.hex}/>} 
                         checked={isDownVoteSelected} 
                         onClick={this.handleDownVote}
                     />
                 </>}
-                <Button label={isVoteSend ? "vote again" : "vote now"}/>
+                <Button label={isVoteSend ? "vote again" : "vote now"} onClick={this.handleVoteSend}/>
             </VotesContainer>
             </>
         )

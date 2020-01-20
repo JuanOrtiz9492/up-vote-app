@@ -34,8 +34,8 @@ Banner.propTypes = {
     background: PropTypes.string,
     template: PropTypes.string,
     margin: PropTypes.string,
-    children: PropTypes.element,
-    padding: PropTypes.element,
+    children: PropTypes.array,
+    padding: PropTypes.string,
 };
     
 Banner.defaultProps = {
