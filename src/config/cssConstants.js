@@ -18,6 +18,18 @@ export const cssConstants = {
             g: '222',
             b: '255',
         },
+        pearlRiver: {
+            hex: '#ebebeb',
+            r: '235',
+            g: '235',
+            b: '235',
+        },
+        coal: {
+            hex: '#333333',
+            r: '51',
+            g: '51',
+            b: '51',
+        },
     },
     progressBar: {
         width: '533px',

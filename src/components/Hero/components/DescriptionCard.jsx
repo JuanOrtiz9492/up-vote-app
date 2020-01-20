@@ -31,7 +31,7 @@ const VotesContainer = styled.div`
 `
 
 const { largest, normal, small } = cssConstants.textSizes
-console.log(cssConstants.textSizes)
+
 const DescriptionCard = ({
     smallText,
     biggestText,

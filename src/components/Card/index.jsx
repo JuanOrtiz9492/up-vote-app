@@ -33,7 +33,7 @@ const StyledIcon = styled.div`
     padding: 0.3em;
     margin-top: 0.5em;
     background-color: ${props => props.color};
-    height: max-content;
+    height: 2em;
     width: max-content;
 `
 

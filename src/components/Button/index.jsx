@@ -24,13 +24,13 @@ const StyledButton = styled.button`
     }
 
     &.fire {
-        border: 3px solid ${fire.hex};
+        border: 3px solid rgba(${fire.r}, ${fire.g}, ${fire.b}, ${props => props.alpha});
         padding: 0 0.7em;
         background: rgba(${fire.r}, ${fire.g}, ${fire.b}, ${props => props.alpha});
     }
 
     &.jungle {
-        border: 3px solid ${jungle.hex};
+        border: 3px solid rgba(${jungle.r}, ${jungle.g}, ${jungle.b}, ${props => props.alpha});
         padding: 0 0.7em;
         background: rgba(${jungle.r}, ${jungle.g}, ${jungle.b}, ${props => props.alpha});
     }
@@ -71,8 +71,8 @@ Button.propTypes = {
     icon: PropTypes.element,
     onClick: PropTypes.func,
     className: PropTypes.string,
-    width: PropTypes.number,
-    height:  PropTypes.number,
+    width: PropTypes.string,
+    height:  PropTypes.string,
     alpha: PropTypes.number,
 };
 
@@ -86,8 +86,6 @@ Button.defaultProps = {
     width:null,
     height: null,
     alpha:1
-
-
 }
 
 export default Button;
