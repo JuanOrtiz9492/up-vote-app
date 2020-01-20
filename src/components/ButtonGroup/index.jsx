@@ -43,6 +43,18 @@ class ButtonGroup extends Component {
         } else if (isDownVoteSelected) {
             voteHandler('downVote')
         }
+
+        if(isUpVoteSelected || isDownVoteSelected){
+            this.setState({
+                isVoteSend: true,
+                isUpVoteSelected: false,
+                isDownVoteSelected: false,
+            })
+            this.props.setIsVoteSend(true);
+        } else {
+            this.setState({isVoteSend: false})
+            this.props.setIsVoteSend(false);
+        }
     }
     
     render () {

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import ProgressBar from '../ProgressBar';
 import ButtonGroup from '../ButtonGroup';
@@ -56,6 +56,8 @@ const Card = ({
     downVotes,
     voteHandler,
     }) => {
+
+        const [isVoteSend, setIsVoteSend] = useState(false);
         const voteTypeHandler = (voteType) => {
             if (voteType === 'upVote') {
                 voteHandler(id, ++upVotes, downVotes);
@@ -63,6 +65,7 @@ const Card = ({
                 voteHandler(id, upVotes, ++downVotes);
             }
         }
+
         return (
             <StyledCardContainer image={image}>
                 <MidContainer>
@@ -74,9 +77,9 @@ const Card = ({
                             <ThumbsDownIcon width={1.8} color={white.hex}/>        
                         </StyledIcon>
                     }
-                    <Description name={name} lastUpdate={lastUpdate} aditionalText={aditionalText}/>
+                    <Description name={name} lastUpdate={lastUpdate} aditionalText={isVoteSend?'Thanks for voting!':aditionalText}/>
                     <div/>
-                    <ButtonGroup voteHandler={voteTypeHandler}/>
+                    <ButtonGroup voteHandler={voteTypeHandler} setIsVoteSend={setIsVoteSend}/>
                 </MidContainer>
                 <BottomContainer>
                     <ProgressBar value={upVotes} maxValue={upVotes+downVotes}/>
