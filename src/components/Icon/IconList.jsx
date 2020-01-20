@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { ReactComponent as ThumbsUp } from '../../assets/svg/thumbs-up.svg';
 import { ReactComponent as ThumbsDown } from '../../assets/svg/thumbs-down.svg';
 import { ReactComponent as Search } from '../../assets/svg/search.svg';
+import { ReactComponent as Wikipedia } from '../../assets/svg/wikipedia-w.svg';
 
 const ThumbsUpIcon = styled(ThumbsUp)`
     width: ${props => props.width}em;
@@ -17,11 +18,15 @@ const SearchIcon = styled(Search)`
     width: ${props => props.width}em;
     fill: ${props => props.color};
 `
-
+const WikipediaIcon = styled(Wikipedia)`
+    width: ${props => props.width}em;
+    fill: ${props => props.color};
+`
 export {
     ThumbsUpIcon,
     ThumbsDownIcon,
-    SearchIcon
+    SearchIcon,
+    WikipediaIcon
 };
 
 

@@ -12,11 +12,11 @@ const StyledButton = styled.button`
     text-decoration: none;
     background: rgba(${white.r}, ${white.g}, ${white.b}, 0.1);
     padding: 10px 20px;
-    margin 0 0.5em;
     border: 2px solid ${white.hex};
     display: inline-block;
     box-sizing: border-box;
-    width: max-content;
+    width: ${props => props.width ? props.width: 'max-content'};
+    height: ${props => props.height ? props.height: 'auto'};
     cursor: pointer;
 
     &:focus {
@@ -26,13 +26,13 @@ const StyledButton = styled.button`
     &.fire {
         border: 3px solid ${fire.hex};
         padding: 0 0.7em;
-        background: ${fire.hex}
+        background: rgba(${fire.r}, ${fire.g}, ${fire.b}, ${props => props.alpha});
     }
 
     &.jungle {
         border: 3px solid ${jungle.hex};
         padding: 0 0.7em;
-        background: ${jungle.hex}
+        background: rgba(${jungle.r}, ${jungle.g}, ${jungle.b}, ${props => props.alpha});
     }
     &.checked {
         border: 3px solid ${white.hex};
@@ -46,7 +46,9 @@ const Button = ({
     onClick,
     className,
     checked,
-    ...props
+    width,
+    height,
+    alpha
 }) => (
     <StyledButton 
         className={classNames(className, {
@@ -55,7 +57,9 @@ const Button = ({
             'checked': checked
         })}
         onClick={onClick}
-        {...props}
+        width={width}
+        alpha={alpha}
+        height={height}
         >
         {icon ? icon: label}
     </StyledButton>)
@@ -66,7 +70,10 @@ Button.propTypes = {
     fire: PropTypes.bool,
     icon: PropTypes.element,
     onClick: PropTypes.func,
-    className: PropTypes.string
+    className: PropTypes.string,
+    width: PropTypes.number,
+    height:  PropTypes.number,
+    alpha: PropTypes.number,
 };
 
 Button.defaultProps = {
@@ -75,7 +82,11 @@ Button.defaultProps = {
     fire: false,
     label: '',
     onClick: () => {},
-    className: ''
+    className: '',
+    width:null,
+    height: null,
+    alpha:1
+
 
 }
 

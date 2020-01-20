@@ -1,5 +1,5 @@
 import React from 'react';
-import { SearchIcon } from '../components/Icon/IconList';
+import { SearchIcon, WikipediaIcon } from '../components/Icon/IconList';
 import { cssConstants } from './cssConstants';
 
 export const constants = {
@@ -38,9 +38,21 @@ export const constants = {
                     route: '/',
                     children: <SearchIcon width={2} color={cssConstants.colors.white.hex}/>
                 }
-            ]
-            
-        }
+            ]   
+        },
+        character:
+        {
+            smallText: 'whats\'s your opinion on',
+            biggestText: 'Pope Francis?',
+            description: 'He\'s talking tought on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)',
+            moreInfo:
+            {
+                link: '#',
+                text: ' More Information',
+                icon: ( width, color ) => (<WikipediaIcon width={width} color={color}/>)
+            },
+            bigText: 'What\'s Your Veredict?',
+        },
     },
     candidates: [
         { 

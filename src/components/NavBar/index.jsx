@@ -31,7 +31,7 @@ const StyledLink = styled(Link)`
     margin: 1em;
     color: ${cssConstants.colors.white.hex}
 `
-const NavBar = ({title, linkArray, ...props}) => (
+const NavBar = ({title, linkArray}) => (
     <StyledHeaderContainer>
         <StyledTitle>
             {title}

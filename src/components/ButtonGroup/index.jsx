@@ -6,8 +6,9 @@ import { cssConstants } from '../../config/cssConstants';
 
 const VotesContainer = styled.div`
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
-    width: min-content;
+    width: 15em;
     margin: 1em 0;
 `
 

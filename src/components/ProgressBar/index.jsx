@@ -56,7 +56,7 @@ const StyledLabel = styled.span`
     padding: 0.2em;
 `
 
-const ProgressBar = ({value, maxValue, ...props}) => (
+const ProgressBar = ({ value, maxValue }) => (
     <StyledContainer className="progress-bar">
         <StyledPercentage className="left">
             <ThumbsUpIcon width={1.5} color={white.hex}/>

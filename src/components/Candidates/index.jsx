@@ -11,7 +11,7 @@ const Container = styled.div`
     grid-template-rows: repeat(2, ${size});
 `
 
-const Candidates = ({candidates, ...props}) => (
+const Candidates = ({ candidates }) => (
     <Container>
         {candidates.map( candidate => ( 
             <Card 

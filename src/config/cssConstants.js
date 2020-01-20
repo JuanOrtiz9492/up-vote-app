@@ -23,6 +23,7 @@ export const cssConstants = {
         width: '533px',
     },
     textSizes:{
+        largest : '4em',
         exLarge: '3em',
         large: '2.5em',
         medium: '2em',
