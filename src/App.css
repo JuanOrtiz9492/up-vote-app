@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'Lato';
+  src: local('Lato'), url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
 body{
   margin: 0;
   background-color: black;
 }
 .App {
   text-align: center;
+  font-family: Lato, fantasy;
   background-color: black;
 }
