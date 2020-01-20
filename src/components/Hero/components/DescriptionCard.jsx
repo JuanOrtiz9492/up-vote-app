@@ -12,6 +12,7 @@ const StyledContainer = styled.section`
     grid-template-rows: 85% 15%;
     background-color: rgba(0, 0, 0, 0.2);
     width: 450px;
+    height: fit-content;
     margin-left: 6em;
 
 `
@@ -25,9 +26,6 @@ const StyledSpan = styled.span`
 `
 const TextContainer = styled.div`
     padding: 2em;
-`
-const VotesContainer = styled.div`
-
 `
 
 const { largest, normal, small } = cssConstants.textSizes
@@ -56,7 +54,7 @@ const DescriptionCard = ({
                 {bigText}
             </StyledSpan>
         </TextContainer>
-        <VotesContainer>
+        <div>
             <Button 
                 jungle 
                 icon={<ThumbsUpIcon width={3} color={white.hex}/>} 
@@ -71,7 +69,7 @@ const DescriptionCard = ({
                 height={'100%'}
                 alpha={0.8}
             />
-        </VotesContainer>
+        </div>
     </StyledContainer>
 );
 

@@ -1,6 +1,16 @@
 @font-face {
   font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
   src: local('Lato'), url('./assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-weight: bold;
+  src: local('Lato'), url('./assets/fonts/Lato-Bold.ttf') format('truetype');
 }
 
 body{
@@ -9,6 +19,6 @@ body{
 }
 .App {
   text-align: center;
-  font-family: Lato, fantasy;
+  font-family: Lato, Arial;
   background-color: black;
 }

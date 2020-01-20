@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 
 const StyledHeaderContainer = styled.header`
-    width: ${constants.hero.background.width};
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;

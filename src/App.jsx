@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Main from './views/Main';
-import StyledBlank from './views/PastTrials';
+import PastTrials from './views/PastTrials';
 
 function App() {
 
@@ -17,7 +17,7 @@ function App() {
 		<Router>
 			<Switch>
 				<Route path="/" component={Main} exact/>
-				<Route path="/past-trials" component={StyledBlank}/>
+				<Route path="/past-trials" component={PastTrials}/>
 			</Switch>
 		</Router>
     </div>

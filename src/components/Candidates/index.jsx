@@ -9,6 +9,10 @@ const Container = styled.div`
     grid-gap: 3em ;
     grid-template-columns: repeat(2, ${size});
     grid-template-rows: repeat(2, ${size});
+    @media (max-width: 800px){
+        display: flex;
+        flex-direction: column;
+    }
 `
 
 const Candidates = ({ candidates }) => (

@@ -39,6 +39,7 @@ export const cssConstants = {
         exLarge: '3em',
         large: '2.5em',
         medium: '2em',
+        semiMedium: '1.5em',
         normal: '1em',
         small: '0.8em',
         exSmall: '0.5em',

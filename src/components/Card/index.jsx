@@ -12,6 +12,9 @@ const StyledCardContainer = styled.div`
     width: 533px;
     height: 533px;
     background-image: url(${props => require(`../../assets/img/${props.image}`)});
+    @media(max-width: 800px){
+        margin: 2em 0;
+    }
 `
 
 const BottomContainer = styled.div`

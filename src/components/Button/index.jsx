@@ -7,12 +7,13 @@ import { cssConstants } from '../../config/cssConstants';
 const { fire, jungle, white } = cssConstants.colors;
 
 const StyledButton = styled.button`
-    color: ${white.hex};
-    text-transform: uppercase;
+    text-transform: Capitalize;
+    font-family: Lato, Arial;
+    color: ${props => props.color};
     text-decoration: none;
     background: rgba(${white.r}, ${white.g}, ${white.b}, 0.1);
     padding: 10px 20px;
-    border: 2px solid ${white.hex};
+    border: 2px solid ${props => props.color};
     display: inline-block;
     box-sizing: border-box;
     width: ${props => props.width ? props.width: 'max-content'};
@@ -48,7 +49,8 @@ const Button = ({
     checked,
     width,
     height,
-    alpha
+    alpha,
+    color,
 }) => (
     <StyledButton 
         className={classNames(className, {
@@ -60,6 +62,7 @@ const Button = ({
         width={width}
         alpha={alpha}
         height={height}
+        color={color}
         >
         {icon ? icon: label}
     </StyledButton>)
@@ -74,6 +77,7 @@ Button.propTypes = {
     width: PropTypes.string,
     height:  PropTypes.string,
     alpha: PropTypes.number,
+    color:  PropTypes.string,
 };
 
 Button.defaultProps = {
@@ -85,7 +89,8 @@ Button.defaultProps = {
     className: '',
     width:null,
     height: null,
-    alpha:1
+    alpha:1,
+    color: white.hex
 }
 
 export default Button;

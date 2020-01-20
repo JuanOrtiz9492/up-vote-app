@@ -4,12 +4,13 @@ import NavBar from '../NavBar';
 import { constants } from '../../config/constants';
 import { cssConstants } from '../../config/cssConstants';
 import DescriptionCard from './components/DescriptionCard.jsx';
+import RemainingTimeBar from '../RemainingTimeBar';
 
 const { background, navBar } = constants.hero;
 
 const StyledContainer = styled.div`
     display: grid;
-    grid-template-rows: 20% 70% 10%;
+    grid-template-rows: 20% 72% 8%;
     background-image: url(${props => require(`../../assets/img/${props.image}`)});
     width: ${background.width};
     height: ${background.height};
@@ -43,7 +44,7 @@ const Hero = ({}) => (
                 }
             bigText={bigText}
         />
-        <div>tres</div>
+        <RemainingTimeBar value={22} maxValue={35}/>
     </StyledContainer>
 );
 

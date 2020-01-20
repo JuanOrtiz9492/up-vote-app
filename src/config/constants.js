@@ -85,4 +85,23 @@ export const constants = {
             aditionalText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         },
       ],
+    footer:{
+        moreInfo: [
+            {
+                link: '#',
+                id: 1,
+                text: 'Terms and Conditions',
+            },
+            {
+                link: '#',
+                id: 2,
+                text: 'Privacy Policy',
+            },
+            {
+                link: '#',
+                id: 3,
+                text: 'Contact Us',
+            },
+        ],
+    },
 };
