@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RemainingTimeBar Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-AykKC eCWvRg"
+  >
+    <div
+      class="sc-AykKD dFcBtW"
+      value="80"
+    >
+      <span
+        class="sc-AykKE htFEyL leftText"
+        color="#ffffff"
+        font-size="0.8em"
+      >
+        CLOSING IN
+      </span>
+    </div>
+    <span
+      class="sc-AykKE kriIIj rightText"
+      color="#333333"
+      font-size="1.5em"
+    >
+      20
+       days
+    </span>
+  </div>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component should Match the Snapshot 1`] = `
+<div>
+  <button
+    class="sc-AykKC dEOuyc"
+    color="#ffffff"
+  />
+</div>
+`;

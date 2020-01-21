@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component should Match the Snapshot 1`] = `
+<div>
+  <header
+    class="sc-AykKI fgxbaB"
+  >
+    <h1
+      class="sc-AykKK RakPd"
+    />
+    <nav
+      class="sc-AykKJ chLIen"
+    />
+  </header>
+</div>
+`;

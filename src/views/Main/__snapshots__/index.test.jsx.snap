@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-fzXfNL bRAmUo"
+  >
+    <div
+      class="sc-fzXfNg gqRDqD"
+    >
+      <header
+        class="sc-fzXfMz hOStll"
+      >
+        <h1
+          class="sc-fzXfMB laCzVT"
+        >
+          Rule of Thumb.
+        </h1>
+        <nav
+          class="sc-fzXfMA huXdup"
+        >
+          <a
+            class="sc-fzXfMC gxNoFl"
+            href="/past-trials"
+          >
+            Past Trials
+          </a>
+          <a
+            class="sc-fzXfMC gxNoFl"
+            href="/"
+          >
+            How it Works
+          </a>
+          <a
+            class="sc-fzXfMC gxNoFl"
+            href="/"
+          >
+            Log in/Sign Up
+          </a>
+          <a
+            class="sc-fzXfMC gxNoFl"
+            href="/"
+          >
+            <svg
+              class="sc-AykKE diYqms"
+              color="#ffffff"
+              width="2"
+            >
+              search.svg
+            </svg>
+          </a>
+        </nav>
+      </header>
+      <section
+        class="sc-fzXfMD fQfJjI"
+      >
+        <div
+          class="sc-fzXfNc iUdajO"
+        >
+          <span
+            class="sc-fzXfME cTLPfs"
+          >
+            whats's your opinion on
+          </span>
+          <span
+            class="sc-fzXfME cXyLAP"
+          >
+            Pope Francis?
+          </span>
+          <span
+            class="sc-fzXfME kpQrpB"
+          >
+            He's talking tought on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)
+          </span>
+          <a
+            class="sc-fzXfNh knFCOf"
+            href="#"
+          >
+            <svg
+              class="sc-AykKF cPgGiI"
+              color="#ffffff"
+              width="1"
+            >
+              wikipedia-w.svg
+            </svg>
+             More Information
+          </a>
+          <span
+            class="sc-fzXfME fRNdXs"
+          >
+            What's Your Veredict?
+          </span>
+        </div>
+        <div>
+          <button
+            class="sc-fzXfLP iHWoqw jungle"
+            color="#ffffff"
+            height="100%"
+            width="50%"
+          >
+            <svg
+              class="sc-AykKC jytkdL"
+              color="#ffffff"
+              width="3"
+            >
+              thumbs-up.svg
+            </svg>
+          </button>
+          <button
+            class="sc-fzXfLP iHWoqw fire"
+            color="#ffffff"
+            height="100%"
+            width="50%"
+          >
+            <svg
+              class="sc-AykKD dCQaqc"
+              color="#ffffff"
+              width="3"
+            >
+              thumbs-down.svg
+            </svg>
+          </button>
+        </div>
+      </section>
+      <div
+        class="sc-fzXfNd cSyDJd"
+      >
+        <div
+          class="sc-fzXfNe dEdNCA"
+          value="37.142857142857146"
+        >
+          <span
+            class="sc-fzXfNf FfpuI leftText"
+            color="#ffffff"
+            font-size="0.8em"
+          >
+            CLOSING IN
+          </span>
+        </div>
+        <span
+          class="sc-fzXfNf dCItEg rightText"
+          color="#333333"
+          font-size="1.5em"
+        >
+          22
+           days
+        </span>
+      </div>
+    </div>
+    <div
+      class="sc-fzXfNL sc-fzXfNM ehwrYk"
+    >
+      <div
+        class="sc-fzXfNi iRUTdj"
+      >
+        <span
+          class="sc-fzXfNN sc-fzXfNO gEnVmV"
+        >
+          <span
+            class="sc-fzXfNN bjUUYD transversal-center"
+            font-size="1.5em"
+          >
+            Speak out. Be heard.
+          </span>
+          <strong
+            class="sc-fzXfNP ljsAoi"
+            font-size="2em"
+          >
+            Be counted
+          </strong>
+        </span>
+        <span
+          class="sc-fzXfNN yjGok"
+          font-size="1em"
+        >
+          <p>
+            Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report.
+          </p>
+        </span>
+        <span
+          class="sc-fzXfNN bZRjRZ transversal-center axis-center fit"
+        >
+          X
+        </span>
+      </div>
+      <span
+        class="sc-fzXfNN ZfA-dD"
+        font-size="2.5em"
+      >
+        Votes
+      </span>
+      <div
+        class="sc-fzXfMy iYcLKJ"
+      >
+        <div
+          class="sc-fzXfMw eyxjsE"
+        />
+      </div>
+      <div
+        class="sc-fzXfNi gdWJwk"
+      >
+        <span
+          class="sc-fzXfNN gHtwVx fit transversal-center"
+          font-size="2em"
+        >
+          Is there anyone else you would want us to add?
+        </span>
+        <button
+          class="sc-fzXfLP dPwRCb"
+          color="#000000"
+        >
+          Submit a Name
+        </button>
+      </div>
+      <footer
+        class="sc-fzXfNj fUVgHw"
+      >
+        <div
+          class="sc-fzXfNl bnJjSX"
+        >
+          <a
+            class="sc-fzXfNk fUpUTX"
+            href="#"
+          >
+            Terms and Conditions
+          </a>
+          <a
+            class="sc-fzXfNk fUpUTX"
+            href="#"
+          >
+            Privacy Policy
+          </a>
+          <a
+            class="sc-fzXfNk fUpUTX"
+            href="#"
+          >
+            Contact Us
+          </a>
+        </div>
+        <div
+          class="sc-fzXfNl bnJjSX"
+        >
+          <span
+            class="sc-fzXfNJ ixfejG"
+          >
+            Follow Us
+          </span>
+          <div
+            class="sc-fzXfNK eBZZqy"
+          >
+            <svg
+              class="sc-AykKG dSASEA"
+              color="#333333"
+              width="2"
+            >
+              facebook-square.svg
+            </svg>
+          </div>
+          <div
+            class="sc-fzXfNK eBZZqy"
+          >
+            <svg
+              class="sc-AykKH jmtspN"
+              color="#333333"
+              width="2"
+            >
+              twitter.svg
+            </svg>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+`;

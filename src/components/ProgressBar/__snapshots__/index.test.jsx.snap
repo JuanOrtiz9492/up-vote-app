@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-AykKJ fNCYSY progress-bar"
+  >
+    <div
+      class="sc-AykKK gPvMTr left"
+    >
+      <svg
+        class="sc-AykKC iUTaVw"
+        color="#ffffff"
+        width="1.5"
+      >
+        thumbs-up.svg
+      </svg>
+      <span
+        class="sc-fzXfLO iMHASE"
+      >
+        50%
+      </span>
+    </div>
+    <div
+      class="sc-AykKK gPvMTr right"
+    >
+      <span
+        class="sc-fzXfLO iMHASE"
+      >
+        50%
+      </span>
+      <svg
+        class="sc-AykKD gSoynF"
+        color="#ffffff"
+        width="1.5"
+      >
+        thumbs-down.svg
+      </svg>
+    </div>
+    <progress
+      class="sc-AykKI cRdaSl"
+      max="100"
+      value="50"
+    />
+  </div>
+</div>
+`;

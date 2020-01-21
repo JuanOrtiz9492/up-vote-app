@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonGroup Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-AykKJ iAKuBh"
+  >
+    <button
+      class="sc-AykKC dEOuyc jungle"
+      color="#ffffff"
+    >
+      <svg
+        class="sc-AykKD SFEtK"
+        color="#ffffff"
+        width="1.2"
+      >
+        thumbs-up.svg
+      </svg>
+    </button>
+    <button
+      class="sc-AykKC dEOuyc fire"
+      color="#ffffff"
+    >
+      <svg
+        class="sc-AykKE kfwLkP"
+        color="#ffffff"
+        width="1.2"
+      >
+        thumbs-down.svg
+      </svg>
+    </button>
+    <button
+      class="sc-AykKC dEOuyc"
+      color="#ffffff"
+    >
+      vote now
+    </button>
+  </div>
+</div>
+`;

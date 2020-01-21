@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Iconlist Components FacebookIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKG eHnaMZ"
+  >
+    facebook-square.svg
+  </svg>
+</div>
+`;
+
+exports[`Iconlist Components SearchIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKE bLJbQr"
+  >
+    search.svg
+  </svg>
+</div>
+`;
+
+exports[`Iconlist Components ThumbsDownIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKD fVEUey"
+  >
+    thumbs-down.svg
+  </svg>
+</div>
+`;
+
+exports[`Iconlist Components ThumbsUpIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKC kfAMsF"
+  >
+    thumbs-up.svg
+  </svg>
+</div>
+`;
+
+exports[`Iconlist Components TwitterIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKH xriyS"
+  >
+    twitter.svg
+  </svg>
+</div>
+`;
+
+exports[`Iconlist Components WikipediaIcon should Match the Snapshot 1`] = `
+<div>
+  <svg
+    class="sc-AykKF iRiTbg"
+  >
+    wikipedia-w.svg
+  </svg>
+</div>
+`;

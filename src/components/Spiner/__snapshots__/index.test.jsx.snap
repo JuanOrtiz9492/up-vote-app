@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spiner Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-AykKC ejRNwF"
+  />
+</div>
+`;

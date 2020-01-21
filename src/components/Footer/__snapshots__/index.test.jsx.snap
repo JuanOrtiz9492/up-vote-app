@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Component should Match the Snapshot 1`] = `
+<div>
+  <footer
+    class="sc-AykKI jAHKFH"
+  >
+    <div
+      class="sc-AykKK gZdhWe"
+    >
+      <a
+        class="sc-AykKJ czMUkW"
+        href="#"
+      >
+        Terms and Conditions
+      </a>
+      <a
+        class="sc-AykKJ czMUkW"
+        href="#"
+      >
+        Privacy Policy
+      </a>
+      <a
+        class="sc-AykKJ czMUkW"
+        href="#"
+      >
+        Contact Us
+      </a>
+    </div>
+    <div
+      class="sc-AykKK gZdhWe"
+    >
+      <span
+        class="sc-fzXfLO kbaGEF"
+      >
+        Follow Us
+      </span>
+      <div
+        class="sc-fzXfLP jFWvwJ"
+      >
+        <svg
+          class="sc-AykKG dSASEA"
+          color="#333333"
+          width="2"
+        >
+          facebook-square.svg
+        </svg>
+      </div>
+      <div
+        class="sc-fzXfLP jFWvwJ"
+      >
+        <svg
+          class="sc-AykKH jmtspN"
+          color="#333333"
+          width="2"
+        >
+          twitter.svg
+        </svg>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

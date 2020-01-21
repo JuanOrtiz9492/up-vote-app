@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Component should Match the Snapshot 1`] = `
+<div>
+  <div
+    class="sc-fzXfLV iGSUfY"
+  >
+    <div
+      class="sc-fzXfLX iPgGDN"
+    >
+      <div
+        class="sc-fzXfMv enHMqV"
+        color="#ffad1d"
+      >
+        <svg
+          class="sc-AykKD bCBIIE"
+          color="#ffffff"
+          width="1.8"
+        >
+          thumbs-down.svg
+        </svg>
+      </div>
+      <section
+        class="sc-fzXfLR hupksK"
+      >
+        <h2
+          class="sc-fzXfLS jcoINV"
+        />
+        <p
+          class="sc-fzXfLT iBbqek"
+        />
+        <p
+          class="sc-fzXfLU ctXhhA"
+        />
+      </section>
+      <div />
+      <div
+        class="sc-fzXfLQ bexvcS"
+      >
+        <button
+          class="sc-fzXfLP kOVuKz jungle"
+          color="#ffffff"
+        >
+          <svg
+            class="sc-AykKC cVkhbB"
+            color="#ffffff"
+            width="1.2"
+          >
+            thumbs-up.svg
+          </svg>
+        </button>
+        <button
+          class="sc-fzXfLP kOVuKz fire"
+          color="#ffffff"
+        >
+          <svg
+            class="sc-AykKD SFEtK"
+            color="#ffffff"
+            width="1.2"
+          >
+            thumbs-down.svg
+          </svg>
+        </button>
+        <button
+          class="sc-fzXfLP kOVuKz"
+          color="#ffffff"
+        >
+          vote now
+        </button>
+      </div>
+    </div>
+    <div
+      class="sc-fzXfLW biiXZr"
+    >
+      <div
+        class="sc-AykKJ fNCYSY progress-bar"
+      >
+        <div
+          class="sc-AykKK gPvMTr left"
+        >
+          <svg
+            class="sc-AykKC iUTaVw"
+            color="#ffffff"
+            width="1.5"
+          >
+            thumbs-up.svg
+          </svg>
+          <span
+            class="sc-fzXfLO iMHASE"
+          >
+            NaN%
+          </span>
+        </div>
+        <div
+          class="sc-AykKK gPvMTr right"
+        >
+          <span
+            class="sc-fzXfLO iMHASE"
+          >
+            NaN%
+          </span>
+          <svg
+            class="sc-AykKD gSoynF"
+            color="#ffffff"
+            width="1.5"
+          >
+            thumbs-down.svg
+          </svg>
+        </div>
+        <progress
+          class="sc-AykKI cRdaSl"
+          max="NaN"
+          value="50"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
