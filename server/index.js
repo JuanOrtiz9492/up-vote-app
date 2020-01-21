@@ -25,7 +25,6 @@ app.get('/candidates', (req, res) => {
 app.put('/updatecandidate', (req,res) => {
     const candidate = req.body;
     const client = new Client(DbVariables)
-    console.log(candidate.upvotes, candidate.downvotes)
     client.connect()
     client.query(`UPDATE CONTESTANS  SET upvotes = ${candidate.upvotes}, downvotes = ${candidate.downvotes} WHERE id = ${candidate.id} ;`)
         .then(() => client.end() )
